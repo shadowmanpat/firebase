@@ -16,6 +16,11 @@
 		FA85BEE2213028FF00A8A6F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA85BEE0213028FF00A8A6F2 /* LaunchScreen.storyboard */; };
 		FA85BEEF21302B4000A8A6F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA85BEEE21302B4000A8A6F2 /* GoogleService-Info.plist */; };
 		FA85BEF121302D6500A8A6F2 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85BEF021302D6500A8A6F2 /* DataService.swift */; };
+		FA85BEF4213054EE00A8A6F2 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85BEF3213054EE00A8A6F2 /* AuthVC.swift */; };
+		FA85BEF62130552000A8A6F2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85BEF52130552000A8A6F2 /* LoginVC.swift */; };
+		FA85BEF82130557700A8A6F2 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85BEF72130557700A8A6F2 /* InsetTextField.swift */; };
+		FA85BEFA2130580A00A8A6F2 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85BEF92130580A00A8A6F2 /* ShadowView.swift */; };
+		FA85BEFC2130591A00A8A6F2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85BEFB2130591A00A8A6F2 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		FA85BEE3213028FF00A8A6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA85BEEE21302B4000A8A6F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA85BEF021302D6500A8A6F2 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		FA85BEF3213054EE00A8A6F2 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		FA85BEF52130552000A8A6F2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		FA85BEF72130557700A8A6F2 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		FA85BEF92130580A00A8A6F2 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		FA85BEFB2130591A00A8A6F2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +112,11 @@
 		FA85BEE92130295200A8A6F2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FA85BEF2213054D700A8A6F2 /* New Group */,
 				FA85BED7213028FE00A8A6F2 /* FirstViewController.swift */,
 				FA85BED9213028FE00A8A6F2 /* SecondViewController.swift */,
+				FA85BEF3213054EE00A8A6F2 /* AuthVC.swift */,
+				FA85BEF52130552000A8A6F2 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -111,6 +124,8 @@
 		FA85BEEA2130296400A8A6F2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FA85BEF72130557700A8A6F2 /* InsetTextField.swift */,
+				FA85BEF92130580A00A8A6F2 /* ShadowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -133,8 +148,16 @@
 			isa = PBXGroup;
 			children = (
 				FA85BEF021302D6500A8A6F2 /* DataService.swift */,
+				FA85BEFB2130591A00A8A6F2 /* AuthService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		FA85BEF2213054D700A8A6F2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,9 +279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA85BEF4213054EE00A8A6F2 /* AuthVC.swift in Sources */,
 				FA85BEDA213028FE00A8A6F2 /* SecondViewController.swift in Sources */,
+				FA85BEF62130552000A8A6F2 /* LoginVC.swift in Sources */,
+				FA85BEFC2130591A00A8A6F2 /* AuthService.swift in Sources */,
 				FA85BED6213028FE00A8A6F2 /* AppDelegate.swift in Sources */,
+				FA85BEFA2130580A00A8A6F2 /* ShadowView.swift in Sources */,
 				FA85BED8213028FE00A8A6F2 /* FirstViewController.swift in Sources */,
+				FA85BEF82130557700A8A6F2 /* InsetTextField.swift in Sources */,
 				FA85BEF121302D6500A8A6F2 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
