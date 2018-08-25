@@ -1,14 +1,14 @@
 //
-//  AuthVC.swift
+//  MeVC.swift
 //  breakpoint
 //
-//  Created by macbook on 24/08/2018.
+//  Created by macbook on 25/08/2018.
 //  Copyright © 2018 Nickagas. All rights reserved.
 //
 
 import UIKit
 
-class AuthVC: UIViewController {
+class MeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,12 @@ class AuthVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func signOutPressed(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var emailLbl: UILabel!
     /*
     // MARK: - Navigation
 
@@ -31,14 +36,5 @@ class AuthVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func signInGoogle(_ sender: Any) {
-    }
-    
-    @IBAction func signinEmail(_ sender: Any) {
-        let loginVC = storyboard?.instantiateViewController(withIdentifier: "LoginVC")
-        present(loginVC!, animated: true, completion: nil)
-    }
-    @IBOutlet weak var signIngoogle: UIButton!
-    @IBAction func signInFB(_ sender: Any) {
-    }
+
 }
