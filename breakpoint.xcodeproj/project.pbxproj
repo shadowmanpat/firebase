@@ -26,6 +26,7 @@
 		FA85BF04213172DA00A8A6F2 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85BF03213172DA00A8A6F2 /* UIViewExt.swift */; };
 		FA85BF06213177BA00A8A6F2 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85BF05213177BA00A8A6F2 /* FeedCell.swift */; };
 		FA85BF08213179A500A8A6F2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85BF07213179A500A8A6F2 /* Message.swift */; };
+		FA85BF0A21317FEA00A8A6F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA85BF0921317FE900A8A6F2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		FA85BF03213172DA00A8A6F2 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		FA85BF05213177BA00A8A6F2 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		FA85BF07213179A500A8A6F2 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		FA85BF0921317FE900A8A6F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				FA85BEDE213028FF00A8A6F2 /* Assets.xcassets */,
 				FA85BEE0213028FF00A8A6F2 /* LaunchScreen.storyboard */,
 				FA85BEE3213028FF00A8A6F2 /* Info.plist */,
+				FA85BF0921317FE900A8A6F2 /* GoogleService-Info.plist */,
 				FA85BEEE21302B4000A8A6F2 /* GoogleService-Info.plist */,
 			);
 			path = breakpoint;
@@ -237,6 +240,7 @@
 			files = (
 				FA85BEE2213028FF00A8A6F2 /* LaunchScreen.storyboard in Resources */,
 				FA85BEEF21302B4000A8A6F2 /* GoogleService-Info.plist in Resources */,
+				FA85BF0A21317FEA00A8A6F2 /* GoogleService-Info.plist in Resources */,
 				FA85BEDF213028FF00A8A6F2 /* Assets.xcassets in Resources */,
 				FA85BEDD213028FE00A8A6F2 /* Main.storyboard in Resources */,
 			);
