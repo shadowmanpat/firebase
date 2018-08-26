@@ -11,7 +11,7 @@ import UIKit
 class FieldVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var mesageArray= [Message]()
+    var mesageArray = [Message]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,15 @@ class FieldVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        DataService.instance.getAllFeedMessages { (returnedessagesArray) in
+            self.mesageArray = returnedessagesArray
+            self.tableView.reloadData()
+        }
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -38,7 +47,13 @@ extension FieldVC: UITableViewDelegate, UITableViewDataSource{
         return mesageArray.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "FeedCell") as? FeedCell else {return UITableViewCell()}
+        let image = UIImage(named: "defaultProfileImage")
+        let message = mesageArray[indexPath.row]
+        
+        cell.configureCell(profileImage: image!, email: message.senderId, content: message.content)
+        
+        return cell
     }
 }
 

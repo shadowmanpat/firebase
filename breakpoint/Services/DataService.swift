@@ -51,7 +51,8 @@ class DataService {
             guard let feedMessageSnapshop = feedMessageSnapshop.children.allObjects as? [DataSnapshot] else {return}
             for message in feedMessageSnapshop {
                 let content = message.childSnapshot(forPath: "content").value as! String
-                let senderId = message.childSnapshot(forPath: "senderId").value as! String
+                let senderId = message.childSnapshot(forPath: "senderID").value as! String
+                
                 let message = Message(content: content, senderId: senderId)
                 messageArray.append(message)
             }
