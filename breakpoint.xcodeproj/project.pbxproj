@@ -14,7 +14,6 @@
 		FA85BEDD213028FE00A8A6F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA85BEDB213028FE00A8A6F2 /* Main.storyboard */; };
 		FA85BEDF213028FF00A8A6F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA85BEDE213028FF00A8A6F2 /* Assets.xcassets */; };
 		FA85BEE2213028FF00A8A6F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA85BEE0213028FF00A8A6F2 /* LaunchScreen.storyboard */; };
-		FA85BEEF21302B4000A8A6F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA85BEEE21302B4000A8A6F2 /* GoogleService-Info.plist */; };
 		FA85BEF121302D6500A8A6F2 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85BEF021302D6500A8A6F2 /* DataService.swift */; };
 		FA85BEF4213054EE00A8A6F2 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85BEF3213054EE00A8A6F2 /* AuthVC.swift */; };
 		FA85BEF62130552000A8A6F2 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85BEF52130552000A8A6F2 /* LoginVC.swift */; };
@@ -26,7 +25,9 @@
 		FA85BF04213172DA00A8A6F2 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85BF03213172DA00A8A6F2 /* UIViewExt.swift */; };
 		FA85BF06213177BA00A8A6F2 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85BF05213177BA00A8A6F2 /* FeedCell.swift */; };
 		FA85BF08213179A500A8A6F2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85BF07213179A500A8A6F2 /* Message.swift */; };
-		FA85BF0A21317FEA00A8A6F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA85BF0921317FE900A8A6F2 /* GoogleService-Info.plist */; };
+		FA85BF0E213277B500A8A6F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA85BF0D213277B500A8A6F2 /* GoogleService-Info.plist */; };
+		FA85BF102132841200A8A6F2 /* CreateGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85BF0F2132841200A8A6F2 /* CreateGroupsVC.swift */; };
+		FA85BF12213286FB00A8A6F2 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85BF11213286FB00A8A6F2 /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +42,6 @@
 		FA85BEDE213028FF00A8A6F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA85BEE1213028FF00A8A6F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA85BEE3213028FF00A8A6F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA85BEEE21302B4000A8A6F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA85BEF021302D6500A8A6F2 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		FA85BEF3213054EE00A8A6F2 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		FA85BEF52130552000A8A6F2 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -53,7 +53,9 @@
 		FA85BF03213172DA00A8A6F2 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		FA85BF05213177BA00A8A6F2 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		FA85BF07213179A500A8A6F2 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		FA85BF0921317FE900A8A6F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA85BF0D213277B500A8A6F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA85BF0F2132841200A8A6F2 /* CreateGroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupsVC.swift; sourceTree = "<group>"; };
+		FA85BF11213286FB00A8A6F2 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +118,7 @@
 				FA85BEDE213028FF00A8A6F2 /* Assets.xcassets */,
 				FA85BEE0213028FF00A8A6F2 /* LaunchScreen.storyboard */,
 				FA85BEE3213028FF00A8A6F2 /* Info.plist */,
-				FA85BF0921317FE900A8A6F2 /* GoogleService-Info.plist */,
-				FA85BEEE21302B4000A8A6F2 /* GoogleService-Info.plist */,
+				FA85BF0D213277B500A8A6F2 /* GoogleService-Info.plist */,
 			);
 			path = breakpoint;
 			sourceTree = "<group>";
@@ -132,6 +133,7 @@
 				FA85BEF52130552000A8A6F2 /* LoginVC.swift */,
 				FA85BEFF2131533D00A8A6F2 /* MeVC.swift */,
 				FA85BF0121315A4800A8A6F2 /* CreatePostVC.swift */,
+				FA85BF0F2132841200A8A6F2 /* CreateGroupsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -142,6 +144,7 @@
 				FA85BEF72130557700A8A6F2 /* InsetTextField.swift */,
 				FA85BEF92130580A00A8A6F2 /* ShadowView.swift */,
 				FA85BF05213177BA00A8A6F2 /* FeedCell.swift */,
+				FA85BF11213286FB00A8A6F2 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,8 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA85BEE2213028FF00A8A6F2 /* LaunchScreen.storyboard in Resources */,
-				FA85BEEF21302B4000A8A6F2 /* GoogleService-Info.plist in Resources */,
-				FA85BF0A21317FEA00A8A6F2 /* GoogleService-Info.plist in Resources */,
+				FA85BF0E213277B500A8A6F2 /* GoogleService-Info.plist in Resources */,
 				FA85BEDF213028FF00A8A6F2 /* Assets.xcassets in Resources */,
 				FA85BEDD213028FE00A8A6F2 /* Main.storyboard in Resources */,
 			);
@@ -305,6 +307,8 @@
 				FA85BEDA213028FE00A8A6F2 /* GroupsVC.swift in Sources */,
 				FA85BEF62130552000A8A6F2 /* LoginVC.swift in Sources */,
 				FA85BEFC2130591A00A8A6F2 /* AuthService.swift in Sources */,
+				FA85BF102132841200A8A6F2 /* CreateGroupsVC.swift in Sources */,
+				FA85BF12213286FB00A8A6F2 /* UserCell.swift in Sources */,
 				FA85BED6213028FE00A8A6F2 /* AppDelegate.swift in Sources */,
 				FA85BEFA2130580A00A8A6F2 /* ShadowView.swift in Sources */,
 				FA85BF0221315A4800A8A6F2 /* CreatePostVC.swift in Sources */,

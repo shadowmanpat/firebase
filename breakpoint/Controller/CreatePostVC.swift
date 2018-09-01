@@ -48,7 +48,10 @@ class CreatePostVC: UIViewController {
     @IBAction func cancelBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.emailLbl.text = Auth.auth().currentUser?.email
+    }
     /*
     // MARK: - Navigation
 

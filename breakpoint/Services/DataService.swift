@@ -59,6 +59,52 @@ class DataService {
             handler(messageArray)
         }
     }
+    
+    func getUSerName(forUID uid: String, handler: @escaping (_ username: String) -> ()){
+        REF_USERS.observeSingleEvent(of: .value) { (userSnaphot) in
+            guard let userSnapshot = userSnaphot.children.allObjects as? [DataSnapshot] else {return}
+            for user in userSnapshot {
+                if user.key == uid {
+                    handler(user.childSnapshot(forPath: "email").value as!String)
+                }
+            }
+        }
+    }
+    
+    func getEmail(forSearchQuery: String, handler: @escaping (_ emailArray: [String]) -> ()){
+        var emailArray = [String]()
+        REF_USERS.observe(.value) { (userSnapshot) in
+            guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else {return}
+            for user in userSnapshot {
+                let email = user.childSnapshot(forPath: "email").value as! String
+                if email.contains(forSearchQuery) && email != Auth.auth().currentUser?.email{
+                    emailArray.append(email)
+                }
+            }
+        }
+        handler(emailArray)
+    }
+    
+    func getIds(forUsernaems usernames: [String], handler: @escaping (_ uidArray: [String])->()){
+        REF_USERS.observeSingleEvent(of: .value) { (userSnapshot) in
+            var idArray = [String]()
+            guard let userSnapshot = userSnapshot.children.allObjects as? [DataSnapshot] else { return}
+            for user in userSnapshot {
+                let email = user.childSnapshot(forPath: "email").value as! String
+                if usernames.contains(email){
+                    idArray.append( user.key)
+                }
+            }
+            handler(idArray)
+        }
+    }
+    
+    func createGroupd(withTitle title: String, description: String, forUserIds ids: [String], handler: @escaping (_ groupCreated: Bool)->()){
+        
+        REF_GROUPS.childByAutoId().updateChildValues(["title":title, "description":description,"members" :ids])
+        handler(true)
+        
+    }
 }
 
 

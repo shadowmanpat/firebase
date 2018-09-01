@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class AuthVC: UIViewController {
 
     override func viewDidLoad() {
@@ -20,7 +20,12 @@ class AuthVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if (Auth.auth().currentUser != nil){
+            dismiss(animated: true, completion: nil)
+        }
+    }
 
     /*
     // MARK: - Navigation

@@ -23,7 +23,7 @@ class FieldVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         DataService.instance.getAllFeedMessages { (returnedessagesArray) in
-            self.mesageArray = returnedessagesArray
+            self.mesageArray = returnedessagesArray.reversed()
             self.tableView.reloadData()
         }
     }
@@ -50,8 +50,10 @@ extension FieldVC: UITableViewDelegate, UITableViewDataSource{
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "FeedCell") as? FeedCell else {return UITableViewCell()}
         let image = UIImage(named: "defaultProfileImage")
         let message = mesageArray[indexPath.row]
-        
-        cell.configureCell(profileImage: image!, email: message.senderId, content: message.content)
+        DataService.instance.getUSerName(forUID: message.senderId) { (returnedUserName) in
+            cell.configureCell(profileImage: image!, email: returnedUserName, content: message.content)
+            
+        }
         
         return cell
     }
